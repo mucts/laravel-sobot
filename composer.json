@@ -5,7 +5,7 @@
     "require": {
         "php": "^7.4",
         "ext-json": "^7.4",
-        "mucts/sobot": "^5.03",
+        "mucts/sobot": "^5.0",
         "laravel/framework": "^7.25"
     },
     "license": "MIT",
