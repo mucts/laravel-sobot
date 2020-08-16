@@ -1,0 +1,33 @@
+{
+    "name": "mucts/laravel-sobot",
+    "description": "根据智齿智能客服系统提供了包含完整业务流程的开放平台接口（Open API），基于PHP开发的一套API插件。",
+    "type": "library",
+    "require": {
+        "php": "^7.4",
+        "ext-json": "^7.4",
+        "mucts/sobot": "^5.03",
+        "laravel/framework": "^7.25"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "herry",
+            "email": "yuandeng@aliyun.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MuCTS\\Laravel\\Sobot\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MuCTS\\Laravel\\Sobot\\Providers\\ServiceProvider"
+            ],
+            "aliases": {
+                "Sobot": "MuCTS\\Laravel\\Sobot\\Facades\\Sobot"
+            }
+        }
+    }
+}
